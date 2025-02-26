@@ -1,0 +1,34 @@
+{
+	"name": "create-chrome-extensionz",
+	"version": "1.0.6",
+	"main": "./dist/index.js",
+	"bin": {
+		"cce": "./dist/index.js",
+		"create-chrome-extensionz": "./dist/index.js"
+	},
+	"license": "MIT",
+	"keywords": [
+		"chrome",
+		"extension",
+		"react",
+		"typescript"
+	],
+	"scripts": {
+		"start": "tsc -p . && node dist/index.js",
+		"copyPackageJson": "node -e \"require('fs').cpSync('./package.json', './dist/package.json', {recursive: false});\"",
+		"build": "tsc -p . && npm run copyPackageJson"
+	},
+	"dependencies": {
+		"figlet": "^1.8.0",
+		"inquirer": "^12.3.2",
+		"path": "^0.12.7"
+	},
+	"devDependencies": {
+		"@types/clear": "^0.1.4",
+		"@types/figlet": "^1.7.0",
+		"@types/node": "^22.10.10",
+		"nodemon": "^3.1.9",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.7.3"
+	}
+}

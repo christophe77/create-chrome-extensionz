@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"rootDir": "src",
+		"outDir": "dist",
+		"resolveJsonModule": true,
+		"strict": true,
+		"target": "es6",
+		"module": "commonjs",
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"moduleResolution": "node"
+	},
+	"include": ["./package.json", "src"]
+}
