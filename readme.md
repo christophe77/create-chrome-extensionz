@@ -5,15 +5,17 @@ Why "z" at the end? Because all decent names were already taken :-)
 
 Currently available :
 
-- React 19 TypeScript
-- React 18 TypeScript
+- React 19 TypeScript : [repo](https://github.com/christophe77/ccez-react-19-ts)
+- React 18 TypeScript : [repo](https://github.com/christophe77/ccez-react-18-ts)
 
 Coming soon :
 
-- React 19 JavaScript
-- React 18 JavaScript
-- Vanilla JavaScript
-- Vanilla TypeScript
+- Vanilla JavaScript : [repo](https://github.com/christophe77/ccez-vanilla-js)
+- Vanilla TypeScript : [repo](https://github.com/christophe77/ccez-vanilla-ts)
+
+To be added :
+- Vue 2 : [repo](https://github.com/christophe77/ccez-vue-2-ts)
+- Vue 3 : [repo](https://github.com/christophe77/ccez-vue-3-ts)
 
 ### Install
 
