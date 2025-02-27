@@ -13,12 +13,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const figlet_1 = __importDefault(require("figlet"));
-const inquirer_1 = __importDefault(require("inquirer"));
+const prompts_1 = require("@inquirer/prompts");
 const installer_1 = require("./installer");
 function handleAnswers(answers) {
-    const front = answers.front.toLowerCase();
-    const typescript = answers.typescript === 'Yes' ? 'ts' : 'js';
-    const repoUrl = `https://github.com/christophe77/ccez-${front}-${typescript}`;
+    const baseUrl = `https://github.com/christophe77/ccez`;
+    const front = answers.selectedTechno.toLowerCase();
+    const repoUrl = `${baseUrl}-${front}-${answers.useTypeScript === 'yes' ? 'ts' : 'js'}`;
     try {
         (0, installer_1.installRepo)(repoUrl, answers.projectName);
     }
@@ -35,27 +35,24 @@ function launchPrompt() {
             const versionText = figlet_1.default.textSync(`v. ${version}`);
             console.log(welcomeMessage);
             console.log(versionText);
-            const answers = yield inquirer_1.default.prompt([
-                {
-                    type: 'input',
-                    name: 'projectName',
-                    message: 'Project name :',
-                },
-                {
-                    type: 'list',
-                    name: 'front',
-                    message: 'Frontend :',
-                    choices: ['React-19', 'React-18', 'Vanilla'],
-                    default: 'React-19',
-                },
-                {
-                    type: 'list',
-                    name: 'typescript',
-                    message: 'TypeScript :',
-                    choices: ['Yes', 'No'],
-                    default: 'Yes',
-                },
-            ]);
+            const tsRepos = ['React-19', 'React-18', 'Vue-2', 'Vue-3', 'Vanilla'];
+            const jsRepos = ['Vanilla'];
+            const projectName = yield (0, prompts_1.input)({ message: 'Project name :' });
+            const useTypeScript = yield (0, prompts_1.select)({
+                message: 'TypeScript :',
+                choices: ['yes', 'no'],
+                default: 'yes',
+            });
+            const selectedTechno = yield (0, prompts_1.select)({
+                message: 'Techno :',
+                choices: useTypeScript === 'yes' ? tsRepos : jsRepos,
+                default: 'React-19',
+            });
+            const answers = {
+                projectName,
+                useTypeScript,
+                selectedTechno,
+            };
             handleAnswers(answers);
         }
         catch (error) {

@@ -1,5 +1,5 @@
 export type Answers = {
 	projectName: string;
-	front: string;
-	typescript: string;
+	useTypeScript: string;
+	selectedTechno: string;
 };

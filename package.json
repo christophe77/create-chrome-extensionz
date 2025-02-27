@@ -19,8 +19,8 @@
 		"build": "tsc -p . && npm run copyPackageJson"
 	},
 	"dependencies": {
+		"@inquirer/prompts": "^7.3.2",
 		"figlet": "^1.8.0",
-		"inquirer": "^12.3.2",
 		"path": "^0.12.7"
 	},
 	"devDependencies": {
