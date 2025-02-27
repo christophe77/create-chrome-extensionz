@@ -1,6 +1,6 @@
 {
 	"name": "create-chrome-extensionz",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"main": "./dist/index.js",
 	"bin": {
 		"cce": "./dist/index.js",

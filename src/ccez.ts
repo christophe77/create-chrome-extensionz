@@ -26,7 +26,7 @@ async function launchPrompt(): Promise<void> {
 		console.log(welcomeMessage);
 		console.log(versionText);
 
-		const tsRepos = ['React-19', 'React-18', 'Vue-2', 'Vue-3', 'Vanilla'];
+		const tsRepos = ['React-19', 'React-18', 'Vanilla'];
 		const jsRepos = ['Vanilla'];
 
 		const projectName: string = await input({ message: 'Project name :' });
