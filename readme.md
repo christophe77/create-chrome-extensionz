@@ -7,15 +7,10 @@ Currently available :
 
 - React 19 TypeScript : [repo](https://github.com/christophe77/ccez-react-19-ts)
 - React 18 TypeScript : [repo](https://github.com/christophe77/ccez-react-18-ts)
-
-Coming soon :
-
+- Vue 3 JavaScript : [repo](https://github.com/christophe77/ccez-vue-3-js)
+- Vue 3 TypeScript : [repo](https://github.com/christophe77/ccez-vue-3-ts)
 - Vanilla JavaScript : [repo](https://github.com/christophe77/ccez-vanilla-js)
 - Vanilla TypeScript : [repo](https://github.com/christophe77/ccez-vanilla-ts)
-
-To be added :
-- Vue 2 : [repo](https://github.com/christophe77/ccez-vue-2-ts)
-- Vue 3 : [repo](https://github.com/christophe77/ccez-vue-3-ts)
 
 ### Install
 

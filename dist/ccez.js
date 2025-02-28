@@ -35,8 +35,8 @@ function launchPrompt() {
             const versionText = figlet_1.default.textSync(`v. ${version}`);
             console.log(welcomeMessage);
             console.log(versionText);
-            const tsRepos = ['React-19', 'React-18', 'Vanilla'];
-            const jsRepos = ['Vanilla'];
+            const tsRepos = ['React-19', 'React-18', 'Vue-3', 'Vanilla'];
+            const jsRepos = ['Vue-3', 'Vanilla'];
             const projectName = yield (0, prompts_1.input)({ message: 'Project name :' });
             const useTypeScript = yield (0, prompts_1.select)({
                 message: 'TypeScript :',
