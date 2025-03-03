@@ -1,6 +1,11 @@
 # CREATE CHROME EXTENSIONz
 
-Generate a Google Chrome extension starter kit in JavaScript, TypeScript or ReactJS.
+Generate a Google Chrome extension starter kit in :
+- JavaScript
+- TypeScript
+- ReactJS
+- VueJS
+  
 Why "z" at the end? Because all decent names were already taken :-)
 
 Currently available :
